@@ -18,3 +18,120 @@ textarea {
     font-size: inherit;
     font-family: inherit;
 }
+
+.header {
+    background: #e0eae5;
+}
+
+.header__top {
+    padding: 28px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__log-in,
+.header__link {
+    padding: 8px 21px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #032e32;
+}
+
+.header__link:hover {
+    text-shadow: 0 1px 1px #032e32;
+}
+
+.header__cta {
+    display: flex;
+    align-items: center;
+}
+
+.header__log-in {
+    font-weight: 600;
+    margin-right: 28px;
+}
+
+.header__sign-up {
+    --height: 50px;
+
+    min-width: 104px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #ffffff;
+
+    background: #032e32;
+}
+
+/* hero */
+.hero {
+    margin-top: 172px;
+    display: flex;
+}
+
+.hero__info {
+}
+
+.hero__heading {
+    font-weight: 800;
+    font-size: 7rem;
+    line-height: 1.14;
+    /* or 114% */
+
+    color: #032e32;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #032e32;
+}
+
+.hero__form {
+    display: flex;
+    column-gap: 18px;
+    margin-top: 40px;
+}
+
+.hero__search {
+    display: flex;
+    align-items: center;
+    width: 361px;
+    height: 62px;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.hero__search-icon {
+    margin-right: 10px;
+}
+
+.hero__search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    
+}
+
+.hero__search-input::placeholder {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #69797a;
+}
+
+.hero__btn {
+   
+    min-width: 191px;
+    border:none;
+}
