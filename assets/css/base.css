@@ -1,5 +1,6 @@
 :root {
     --primary-color: #b5ed3d;
+    --bg-color: #032e32;
 }
 
 .container {
@@ -10,7 +11,7 @@
 }
 
 a {
-    display: inline-block;
+    /* display: inline-block; */
     text-decoration: none;
 }
 
@@ -31,4 +32,18 @@ a {
 .btn:hover {
     opacity: 0.9;
     cursor: pointer;
+}
+
+.section-heading {
+    font-weight: 800;
+    font-size: 4.2rem;
+    line-height: 1.24;
+    color: #032e32;
+}
+
+.section-desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #4f5a5a;
 }

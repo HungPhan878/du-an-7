@@ -1,0 +1,273 @@
+/* pc */
+@media screen and (min-width: 992px) {
+    .hidden-pc {
+        display: none;
+    }
+}
+
+/* tablet and mobile */
+@media screen and (max-width: 991px) {
+    .hidden {
+        display: none;
+    }
+
+    .menu-overlay__input:checked ~ .menu-overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menu-overlay__input:checked ~ .menu-wrap {
+        transform: translateX(0);
+    }
+
+    .menu-overlay__icon {
+        font-size: 24px;
+        color: var(--bg-color);
+    }
+
+    .menu-overlay {
+        position: fixed;
+        z-index: 1;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+
+    .menu-wrap {
+        position: fixed;
+        inset: 0 40% 0 0;
+        padding: 60px;
+        background-color: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu-list {
+        margin-top: 30px;
+    }
+
+    .menu-list li a {
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    .menu-list .separate {
+        border-top: 1px solid #ccc;
+    }
+
+    /* header */
+    .header__top {
+        position: relative;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero__info {
+        text-align: center;
+    }
+
+    .hero__form {
+        justify-content: center;
+    }
+
+    .benefits__wrap {
+        margin: 0 0 -76px;
+    }
+
+    .hero__list {
+        margin-top: 48px;
+    }
+
+    .benefits__list {
+        margin-top: 24px;
+    }
+
+    .hero__deco {
+        top: 144px;
+    }
+
+    .hero_courses {
+        width: 100%;
+    }
+
+    .hero__deco {
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .benefits__inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .courses__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .courses-item__thumb {
+        width: 100%;
+    }
+
+    .learning__inner {
+        flex-direction: column-reverse;
+    }
+
+    .learning__img {
+        width: 100%;
+    }
+
+    .feedback__list {
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+    }
+
+    .students__avatar:nth-of-type(4) {
+        right: 446px;
+    }
+
+    .students__avatar:nth-of-type(5) {
+        right: 339px;
+    }
+
+    .students__avatar:nth-of-type(1),
+    .students__avatar:nth-of-type(6) {
+        display: none;
+    }
+
+    .students__deco:nth-of-type(1) {
+        left: 77px;
+        bottom: -407px;
+    }
+
+    .students__deco:nth-of-type(2) {
+        right: 77px;
+        top: -221px;
+    }
+
+    .students__deco:nth-of-type(3) {
+        bottom: 180px;
+        left: 210px;
+    }
+
+    .students__deco:nth-of-type(4) {
+        top: 310px;
+        right: 212px;
+    }
+
+    .footer__row {
+        grid-template-columns: auto auto;
+        row-gap: 24px;
+    }
+}
+
+/* tablet   */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    .hidden-mobile {
+        display: none;
+    }
+
+    .menu-wrap {
+        position: fixed;
+        inset: 0 20% 0 0;
+        padding: 40px;
+    }
+
+    .hero__heading {
+        font-size: 5rem;
+    }
+
+    .hero__heading,
+    .hero__desc {
+        width: 100%;
+    }
+
+    .hero__form {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .hero__search {
+        width: 100%;
+    }
+
+    .benefits__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits__list {
+        column-gap: 18px;
+    }
+
+    .support__desc {
+        width: 100%;
+    }
+
+    .support__thumb-1 {
+        width: 100%;
+    }
+
+    .feature__heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature__list {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .section-heading,
+    .courses__desc {
+        text-align: center;
+        width: 100%;
+    }
+
+    .courses__list {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback__desc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .students {
+        padding: 30px;
+    }
+
+    .students__desc {
+        width: 100%;
+    }
+
+    .footer__row {
+        grid-template-columns: auto;
+    }
+    .footer__contact,
+    .footer__form {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 30px;
+    }
+
+    .footer__bottom {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+/* them menu  */
