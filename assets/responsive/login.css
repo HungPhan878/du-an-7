@@ -1,0 +1,55 @@
+/* pc */
+@media screen and (min-width: 62em) {
+}
+
+/* tablet and mobile */
+@media screen and (max-width: 61.9375em) {
+    .login {
+        background-color: #85ffbd;
+        background-image: linear-gradient(#04704e 50%, #e0eae5 50%);
+        /* height: 100vh; */
+    }
+
+    .login__inner {
+        flex-direction: column;
+    }
+
+    .login__wrap {
+        margin-top: 62px;
+    }
+
+    .login__box {
+        margin-top: 60px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 48em) and (max-width: 61.9375em) {
+    .login__inner {
+        padding-bottom: 0;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 47.9375em) {
+    .login {
+        height: 100%;
+    }
+
+    .login__password-input,
+    .login__desc,
+    .login__heading,
+    .login__content,
+    .login__password,
+    .login__input,
+    .login__wrap {
+        width: 100%;
+    }
+
+    .login__heading {
+        font-size: 3rem;
+    }
+
+    .login__password-input {
+    }
+}

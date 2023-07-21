@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project-07</title>
+        <!-- embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- reset -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- link -->
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/contact.css" />
+        <link rel="stylesheet" href="./assets/responsive/contact.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <label
+                        for="menu-overlay"
+                        class="menu-overlay__icon hidden-pc"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
+                    <a href="/">
+                        <img
+                            src="./assets/icons/Logo.svg"
+                            alt="circuit"
+                            class="header__logo"
+                        />
+                    </a>
+                    <ul class="header__list hidden">
+                        <li class="header__item">
+                            <a href="./index.html" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./about.html" class="header__link"
+                                >About us</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a href="./resources.html" class="header__link"
+                                >Resources</a
+                            >
+                        </li>
+                        <li class="header__item header__active">
+                            <a href="#!" class="header__link">Contact</a>
+                        </li>
+                        <!-- show on tablet and mobile -->
+                        <li class="header__item hidden-pc separate">
+                            <a href="./login.html" class="header__link"
+                                >Log In</a
+                            >
+                        </li>
+                        <li class="header__item hidden-pc">
+                            <a href="./signup.html" class="header__link"
+                                >Sign Up</a
+                            >
+                        </li>
+                        <!-- log-in -->
+                    </ul>
+                    <div class="header__cta hidden">
+                        <a href="./login.html" class="header__log-in">Log In</a>
+                        <a href="./signup.html" class="btn header__sign-up"
+                            >Sign Up</a
+                        >
+                    </div>
+                </div>
+                <!-- header form -->
+                <section class="form">
+                    <h1 class="form__heading">Let’s talk with us easily</h1>
+                    <form action="" class="form__contact">
+                        <div class="form__row">
+                            <input
+                                type="text"
+                                name="first-name"
+                                id=""
+                                placeholder="Your first name"
+                                class="form__info"
+                                minlength="7"
+                            />
+                            <input
+                                type="text"
+                                name="last-name"
+                                id=""
+                                placeholder="Your last name"
+                                class="form__info"
+                                minlength="7"
+                            />
+                        </div>
+                        <div class="form__row">
+                            <input
+                                type="email"
+                                name="email"
+                                id=""
+                                placeholder="Your email address"
+                                class="form__info"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            />
+                            <input
+                                type="phone"
+                                name="phone"
+                                id=""
+                                placeholder="Your phone number"
+                                class="form__info"
+                                pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b"
+                            />
+                        </div>
+                        <p class="form__desc">I want to learn</p>
+                        <div class="form__list">
+                            <div class="form__item">
+                                <input
+                                    type="radio"
+                                    name="course"
+                                    id="course-4"
+                                    class="form__item-radio"
+                                    checked
+                                />
+                                <label for="course-4" class="form__item-label"
+                                    >Design</label
+                                >
+                            </div>
+                            <!-- item2 -->
+                            <div class="form__item">
+                                <input
+                                    type="radio"
+                                    name="course"
+                                    id="course-3"
+                                    class="form__item-radio"
+                                />
+                                <label for="course-3" class="form__item-label"
+                                    >Development</label
+                                >
+                            </div>
+                            <!-- item3 -->
+                            <div class="form__item">
+                                <input
+                                    type="radio"
+                                    name="course"
+                                    id="course-2"
+                                    class="form__item-radio"
+                                />
+                                <label for="course-2" class="form__item-label"
+                                    >Marketing</label
+                                >
+                            </div>
+                            <!-- item4 -->
+                            <div class="form__item">
+                                <input
+                                    type="radio"
+                                    name="course"
+                                    id="course-1"
+                                    class="form__item-radio"
+                                />
+                                <label for="course-1" class="form__item-label"
+                                    >Other</label
+                                >
+                            </div>
+                        </div>
+                        <textarea
+                            name="messages"
+                            id=""
+                            placeholder="Write your messages"
+                            cols="30"
+                            rows="10"
+                            class="form__message"
+                            minlength="10"
+                        ></textarea>
+                        <div class="form__button">
+                            <button type="submit" class="btn form__submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </header>
+        <!-- menu-mobile -->
+        <section class="mobile-menu hidden-pc">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-overlay"
+                class="menu__overlay-input"
+            />
+            <label for="menu-overlay" class="menu__overlay"></label>
+            <div class="menu__wrap">
+                <a href="/">
+                    <img
+                        src="./assets/icons/Logo.svg"
+                        alt="circuit"
+                        class="menu__logo"
+                    />
+                </a>
+                <ul class="menu__list"></ul>
+                <script>
+                    const menuList = document.querySelector(".menu__list");
+                    const headerList = document.querySelector(".header__list");
+
+                    menuList.innerHTML = headerList.innerHTML;
+                </script>
+            </div>
+        </section>
+        <main>
+            <!-- student -->
+            <section class="students">
+                <div class="container">
+                    <section class="students__inner">
+                        <figure class="students__avatars hidden-mobile">
+                            <img
+                                src="./assets/images/hero-courses1.jpg"
+                                alt="avatar"
+                                class="students__avatar hidden"
+                            />
+                            <img
+                                src="./assets/images/hero-courses1.jpg"
+                                alt="avatar"
+                                class="students__avatar"
+                            />
+                            <img
+                                src="./assets/images/hero-courses1.jpg"
+                                alt="avatar"
+                                class="students__avatar"
+                            />
+                            <img
+                                src="./assets/images/hero-courses1.jpg"
+                                alt="avatar"
+                                class="students__avatar"
+                            />
+                            <img
+                                src="./assets/images/hero-courses1.jpg"
+                                alt="avatar"
+                                class="students__avatar"
+                            />
+                            <img
+                                src="./assets/images/hero-courses1.jpg"
+                                alt="avatar"
+                                class="students__avatar hidden"
+                            />
+                        </figure>
+                        <section class="students__info">
+                            <h2 class="section-heading students__heading">
+                                More that 1M+ successful students
+                            </h2>
+                            <p class="section-desc students__desc">
+                                Circuit is flexible and affordable and offers
+                                you exceptional support to achieve your career
+                                goals.
+                            </p>
+                            <a href="#!" class="btn students__cta-btn"
+                                >Get Started</a
+                            >
+                        </section>
+                        <img
+                            src="./assets/icons/Star deco1.svg"
+                            alt=""
+                            class="students__deco hidden-mobile"
+                        />
+                        <img
+                            src="./assets/icons/Star deco1.svg"
+                            alt=""
+                            class="students__deco hidden-mobile"
+                        />
+                        <img
+                            src="./assets/icons/Star deco2.svg"
+                            alt=""
+                            class="students__deco hidden-mobile"
+                        />
+                        <img
+                            src="./assets/icons/Star deco2.svg"
+                            alt=""
+                            class="students__deco hidden-mobile"
+                        />
+                    </section>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <section class="footer__col">
+                        <h3 class="footer__title">Courses</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Classroom Courses</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Virtual Classroom Courses</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >E-Learning Courses</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footer__col">
+                        <h3 class="footer__title">Circuit</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >About us</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Why Circuit</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Testimonials</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Promotions</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link">Blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Podcasts</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link">Forum</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footer__col">
+                        <h3 class="footer__title">Help</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Contact us</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Our Venues</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >My account</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footer__col">
+                        <h3 class="footer__title">Newsletter</h3>
+                        <form action="" class="footer__form">
+                            <input
+                                type="email"
+                                name=""
+                                id=""
+                                placeholder="email address"
+                                class="footer__input"
+                            />
+                            <button type="submit" class="btn footer__submit">
+                                Subscribe
+                            </button>
+                        </form>
+                        <div class="footer__info">
+                            <div class="footer__info-email">
+                                <p class="footer__label">Email us</p>
+                                <p class="footer__desc">email@gmail.com</p>
+                            </div>
+                            <div class="footer__info-phone">
+                                <p class="footer__label">Call us</p>
+                                <p class="footer__desc">000 1234 5678</p>
+                            </div>
+                        </div>
+                        <div class="footer__socials">
+                            <img
+                                src="./assets/icons/twittef.svg"
+                                alt="twittef"
+                                class="footer__icon"
+                            />
+                            <img
+                                src="./assets/icons/facebook.svg"
+                                alt="facebook"
+                                class="footer__icon"
+                            />
+                            <img
+                                src="./assets/icons/linkin.svg"
+                                alt="linkin"
+                                class="footer__icon"
+                            />
+                        </div>
+                    </section>
+                </div>
+
+                <!-- bottom -->
+                <div class="footer__bottom">
+                    <img
+                        src="./assets/icons/Logo.svg"
+                        alt="circuit"
+                        class="footer__logo"
+                    />
+                    <div class="footer__payments">
+                        <img
+                            src="./assets/icons/payment.svg"
+                            alt=""
+                            class="footer__payment-img"
+                        />
+                        <img
+                            src="./assets/icons/pay.svg"
+                            alt=""
+                            class="footer__payment-img"
+                        />
+                        <img
+                            src="./assets/icons/visa.svg"
+                            alt=""
+                            class="footer__payment-img"
+                        />
+                    </div>
+                    <p class="footer__copyright">
+                        Copyright © 2022 UIHUT all rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

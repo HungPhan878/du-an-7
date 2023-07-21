@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project-07</title>
+        <!-- embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- reset -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- link -->
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/resources.css" />
+        <link rel="stylesheet" href="./assets/responsive/resources.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <label
+                        for="menu-overlay"
+                        class="menu-overlay__icon hidden-pc"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
+                    <a href="/">
+                        <img
+                            src="./assets/icons/Logo.svg"
+                            alt="circuit"
+                            class="header__logo"
+                        />
+                    </a>
+                    <ul class="header__list hidden">
+                        <li class="header__item">
+                            <a href="./index.html" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./about.html" class="header__link"
+                                >About us</a
+                            >
+                        </li>
+                        <li class="header__item header__active">
+                            <a href="#!" class="header__link">Resources</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./contact.html" class="header__link"
+                                >Contact</a
+                            >
+                        </li>
+                        <!-- show on tablet and mobile -->
+                        <li class="header__item hidden-pc separate">
+                            <a href="./login.html" class="header__link"
+                                >Log In</a
+                            >
+                        </li>
+                        <li class="header__item hidden-pc">
+                            <a href="./signup.html" class="header__link"
+                                >Sign Up</a
+                            >
+                        </li>
+                        <!-- log-in -->
+                    </ul>
+                    <div class="header__cta hidden">
+                        <a href="./login.html" class="header__log-in">Log In</a>
+                        <a href="./signup.html" class="btn header__sign-up"
+                            >Sign Up</a
+                        >
+                    </div>
+                </div>
+
+                <!-- hero -->
+                <section class="hero">
+                    <section class="hero__content">
+                        <h1 class="hero__heading">
+                            How to become a ui/ux designer in 2022
+                        </h1>
+                        <time class="hero__date">July 7, 2022 | By Warner</time>
+                        <p class="section-desc hero__desc">
+                            The need for UI/UX designer is increasing,
+                            especially within the past five years. Did you know
+                            that...
+                        </p>
+                        <a href="#!" class="hero__link">Read Article</a>
+                    </section>
+                    <figure class="hero__pic">
+                        <img
+                            src="./assets/images/hero.jpg"
+                            alt="How to become a ui/ux designer in 2022"
+                            class="hero__image"
+                        />
+                        <img
+                            src="./assets/icons/deco-hero1.svg"
+                            alt=""
+                            class="hero__deco hidden-mobile"
+                        />
+                    </figure>
+                </section>
+            </div>
+        </header>
+        <!-- menu-mobile -->
+        <section class="mobile-menu hidden-pc">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-overlay"
+                class="menu__overlay-input"
+            />
+            <label for="menu-overlay" class="menu__overlay"></label>
+            <div class="menu__wrap">
+                <a href="/">
+                    <img
+                        src="./assets/icons/Logo.svg"
+                        alt="circuit"
+                        class="menu__logo"
+                    />
+                </a>
+                <ul class="menu__list"></ul>
+                <script>
+                    const menuList = document.querySelector(".menu__list");
+                    const headerList = document.querySelector(".header__list");
+
+                    menuList.innerHTML = headerList.innerHTML;
+                </script>
+            </div>
+        </section>
+        <!-- main -->
+        <main>
+            <!-- search -->
+            <nav class="nav hidden-mobile">
+                <div class="container">
+                    <div class="nav__inner">
+                        <div class="nav__search">
+                            <a href="#!" class="nav__search-icon">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M19 19L14.7501 14.7425L19 19ZM17.1053 9.05263C17.1053 11.1883 16.2569 13.2365 14.7467 14.7467C13.2365 16.2569 11.1883 17.1053 9.05263 17.1053C6.91694 17.1053 4.86872 16.2569 3.35856 14.7467C1.8484 13.2365 1 11.1883 1 9.05263C1 6.91694 1.8484 4.86872 3.35856 3.35856C4.86872 1.8484 6.91694 1 9.05263 1C11.1883 1 13.2365 1.8484 14.7467 3.35856C16.2569 4.86872 17.1053 6.91694 17.1053 9.05263V9.05263Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link nav__item--active"
+                                    >All</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Design</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Development</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Marketing</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Business</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Technology</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- articles -->
+            <section class="articles">
+                <div class="container">
+                    <h2 class="section-heading articles__heading">
+                        Popular Articles for you about all topic
+                    </h2>
+                    <div class="articles__list">
+                        <!-- item1 -->
+                        <articles class="articles__item hidden-mobile">
+                            <div class="articles__wrap">
+                                <section class="articles__item-content">
+                                    <h3 class="articles__item-title">
+                                        How do you turn your passion into your
+                                        purpose?
+                                    </h3>
+                                    <time class="articles__item-date"
+                                        >July 7, 2022 | By Warner</time
+                                    >
+                                    <p class="articles__desc">
+                                        Learn how an animal lover became a voice
+                                        for the voiceless. “Finding a passion is
+                                        great. But having a purpose is even...
+                                    </p>
+                                    <a href="#!" class="articles__link"
+                                        >Read Article</a
+                                    >
+                                </section>
+                            </div>
+                        </articles>
+                        <!-- item2 -->
+                        <articles class="articles__item">
+                            <!-- remember for tag figure -->
+                            <a href="#!" class="">
+                                <img
+                                    src="./assets/images/hero.jpg"
+                                    alt=" How do you turn your passion into your
+                                    purpose?"
+                                    class="articles__item-thumb"
+                                />
+                            </a>
+                            <section class="articles__item-content">
+                                <h3 class="articles__item-title">
+                                    How do you turn your passion into your
+                                    purpose?
+                                </h3>
+                                <time class="articles__item-date"
+                                    >July 7, 2022 | By Warner</time
+                                >
+                                <p class="articles__desc">
+                                    Learn how an animal lover became a voice for
+                                    the voiceless. “Finding a passion is great.
+                                    But having a purpose is even...
+                                </p>
+                                <a href="#!" class="articles__link"
+                                    >Read Article</a
+                                >
+                            </section>
+                        </articles>
+                        <!-- item3 -->
+                        <articles class="articles__item">
+                            <a href="#!" class="">
+                                <img
+                                    src="./assets/images/hero.jpg"
+                                    alt=" How do you turn your passion into your
+                                    purpose?"
+                                    class="articles__item-thumb"
+                                />
+                            </a>
+                            <section class="articles__item-content">
+                                <h3 class="articles__item-title">
+                                    How do you turn your passion into your
+                                    purpose?
+                                </h3>
+                                <time class="articles__item-date"
+                                    >July 7, 2022 | By Warner</time
+                                >
+                                <p class="articles__desc">
+                                    Learn how an animal lover became a voice for
+                                    the voiceless. “Finding a passion is great.
+                                    But having a purpose is even...
+                                </p>
+                                <a href="#!" class="articles__link"
+                                    >Read Article</a
+                                >
+                            </section>
+                        </articles>
+                        <!-- item4 -->
+                        <articles class="articles__item">
+                            <a href="#!" class="">
+                                <img
+                                    src="./assets/images/hero.jpg"
+                                    alt=" How do you turn your passion into your
+                                    purpose?"
+                                    class="articles__item-thumb"
+                                />
+                            </a>
+                            <section class="articles__item-content">
+                                <h3 class="articles__item-title">
+                                    How do you turn your passion into your
+                                    purpose?
+                                </h3>
+                                <time class="articles__item-date"
+                                    >July 7, 2022 | By Warner</time
+                                >
+                                <p class="articles__desc">
+                                    Learn how an animal lover became a voice for
+                                    the voiceless. “Finding a passion is great.
+                                    But having a purpose is even...
+                                </p>
+                                <a href="#!" class="articles__link"
+                                    >Read Article</a
+                                >
+                            </section>
+                        </articles>
+                        <!-- item5 -->
+                        <articles class="articles__item">
+                            <a href="#!" class="">
+                                <img
+                                    src="./assets/images/hero.jpg"
+                                    alt=" How do you turn your passion into your
+                                    purpose?"
+                                    class="articles__item-thumb"
+                                />
+                            </a>
+                            <section class="articles__item-content">
+                                <h3 class="articles__item-title">
+                                    How do you turn your passion into your
+                                    purpose?
+                                </h3>
+                                <time class="articles__item-date"
+                                    >July 7, 2022 | By Warner</time
+                                >
+                                <p class="articles__desc">
+                                    Learn how an animal lover became a voice for
+                                    the voiceless. “Finding a passion is great.
+                                    But having a purpose is even...
+                                </p>
+                                <a href="#!" class="articles__link"
+                                    >Read Article</a
+                                >
+                            </section>
+                        </articles>
+                        <!-- item6 -->
+                        <articles class="articles__item">
+                            <a href="#!" class="">
+                                <img
+                                    src="./assets/images/hero.jpg"
+                                    alt=" How do you turn your passion into your
+                                    purpose?"
+                                    class="articles__item-thumb"
+                                />
+                            </a>
+                            <section class="articles__item-content">
+                                <h3 class="articles__item-title">
+                                    How do you turn your passion into your
+                                    purpose?
+                                </h3>
+                                <time class="articles__item-date"
+                                    >July 7, 2022 | By Warner</time
+                                >
+                                <p class="articles__desc">
+                                    Learn how an animal lover became a voice for
+                                    the voiceless. “Finding a passion is great.
+                                    But having a purpose is even...
+                                </p>
+                                <a href="#!" class="articles__link"
+                                    >Read Article</a
+                                >
+                            </section>
+                        </articles>
+                        <!-- item7-->
+                        <articles class="articles__item">
+                            <a href="#!" class="">
+                                <img
+                                    src="./assets/images/hero.jpg"
+                                    alt=" How do you turn your passion into your
+                                    purpose?"
+                                    class="articles__item-thumb"
+                                />
+                            </a>
+                            <section class="articles__item-content">
+                                <h3 class="articles__item-title">
+                                    How do you turn your passion into your
+                                    purpose?
+                                </h3>
+                                <time class="articles__item-date"
+                                    >July 7, 2022 | By Warner</time
+                                >
+                                <p class="articles__desc">
+                                    Learn how an animal lover became a voice for
+                                    the voiceless. “Finding a passion is great.
+                                    But having a purpose is even...
+                                </p>
+                                <a href="#!" class="articles__link"
+                                    >Read Article</a
+                                >
+                            </section>
+                        </articles>
+                        <!-- item8 -->
+                        <articles class="articles__item">
+                            <a href="#!" class="">
+                                <img
+                                    src="./assets/images/hero.jpg"
+                                    alt=" How do you turn your passion into your
+                                    purpose?"
+                                    class="articles__item-thumb"
+                                />
+                            </a>
+                            <section class="articles__item-content">
+                                <h3>
+                                    <a href="#!" class="articles__item-title">
+                                        How do you turn your passion into your
+                                        purpose?
+                                    </a>
+                                </h3>
+                                <time class="articles__item-date"
+                                    >July 7, 2022 | By Warner</time
+                                >
+                                <p class="articles__desc">
+                                    Learn how an animal lover became a voice for
+                                    the voiceless. “Finding a passion is great.
+                                    But having a purpose is even...
+                                </p>
+                                <a href="#!" class="articles__link"
+                                    >Read Article</a
+                                >
+                            </section>
+                        </articles>
+                    </div>
+                    <!-- button -->
+                    <div class="articles__button">
+                        <a href="#!" class="btn articles__btn"
+                            >Read All Article</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <section class="footer__col">
+                        <h3 class="footer__title">Courses</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Classroom Courses</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Virtual Classroom Courses</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >E-Learning Courses</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footer__col">
+                        <h3 class="footer__title">Circuit</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >About us</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Why Circuit</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Testimonials</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Promotions</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link">Blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Podcasts</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link">Forum</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footer__col">
+                        <h3 class="footer__title">Help</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Contact us</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >Our Venues</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__item-link"
+                                    >My account</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footer__col">
+                        <h3 class="footer__title">Newsletter</h3>
+                        <form action="" class="footer__form">
+                            <input
+                                type="email"
+                                name=""
+                                id=""
+                                placeholder="email address"
+                                class="footer__input"
+                            />
+                            <button type="submit" class="btn footer__submit">
+                                Subscribe
+                            </button>
+                        </form>
+                        <div class="footer__info">
+                            <div class="footer__info-email">
+                                <p class="footer__label">Email us</p>
+                                <p class="footer__desc">email@gmail.com</p>
+                            </div>
+                            <div class="footer__info-phone">
+                                <p class="footer__label">Call us</p>
+                                <p class="footer__desc">000 1234 5678</p>
+                            </div>
+                        </div>
+                        <div class="footer__socials">
+                            <img
+                                src="./assets/icons/twittef.svg"
+                                alt="twittef"
+                                class="footer__icon"
+                            />
+                            <img
+                                src="./assets/icons/facebook.svg"
+                                alt="facebook"
+                                class="footer__icon"
+                            />
+                            <img
+                                src="./assets/icons/linkin.svg"
+                                alt="linkin"
+                                class="footer__icon"
+                            />
+                        </div>
+                    </section>
+                </div>
+
+                <!-- bottom -->
+                <div class="footer__bottom">
+                    <img
+                        src="./assets/icons/Logo.svg"
+                        alt="circuit"
+                        class="footer__logo"
+                    />
+                    <div class="footer__payments">
+                        <img
+                            src="./assets/icons/payment.svg"
+                            alt=""
+                            class="footer__payment-img"
+                        />
+                        <img
+                            src="./assets/icons/pay.svg"
+                            alt=""
+                            class="footer__payment-img"
+                        />
+                        <img
+                            src="./assets/icons/visa.svg"
+                            alt=""
+                            class="footer__payment-img"
+                        />
+                    </div>
+                    <p class="footer__copyright">
+                        Copyright © 2022 UIHUT all rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

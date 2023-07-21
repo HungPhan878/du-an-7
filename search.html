@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project-07</title>
+        <!-- embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- reset -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- link -->
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/search.css" />
+        <link rel="stylesheet" href="./assets/responsive/search.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <!-- header top -->
+                <div class="header__top">
+                    <label
+                        for="menu-overlay"
+                        class="menu-overlay__icon hidden-pc"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
+                    <a href="#">
+                        <img
+                            src="./assets/icons/Logo.svg"
+                            alt="circuit"
+                            class="header__logo"
+                        />
+                    </a>
+                    <ul class="header__list hidden">
+                        <li class="header__item">
+                            <a href="./index.html" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./about.html" class="header__link"
+                                >About us</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a href="./resources.html" class="header__link"
+                                >Resources</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a href="./contact.html" class="header__link"
+                                >Contact</a
+                            >
+                        </li>
+                        <!-- show on tablet and mobile -->
+                        <li class="header__item hidden-pc separate">
+                            <a href="./login.html" class="header__link"
+                                >Log In</a
+                            >
+                        </li>
+                        <li class="header__item hidden-pc">
+                            <a href="./signup.html" class="header__link"
+                                >Sign Up</a
+                            >
+                        </li>
+                        <!-- log-in -->
+                    </ul>
+                    <div class="header__cta hidden">
+                        <a href="./login.html" class="header__log-in">Log In</a>
+                        <a href="./signup.html" class="btn header__sign-up"
+                            >Sign Up</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="mobile-menu hidden-pc">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-overlay"
+                class="menu__overlay-input"
+            />
+            <label for="menu-overlay" class="menu__overlay"></label>
+            <div class="menu__wrap">
+                <a href="/">
+                    <img
+                        src="./assets/icons/Logo.svg"
+                        alt="circuit"
+                        class="menu__logo"
+                    />
+                </a>
+                <ul class="menu__list"></ul>
+                <script>
+                    const menuList = document.querySelector(".menu__list");
+                    const headerList = document.querySelector(".header__list");
+
+                    menuList.innerHTML = headerList.innerHTML;
+                </script>
+            </div>
+        </section>
+        <main>
+            <section class="search">
+                <div class="container">
+                    <h1 class="search__heading">10 result for “web design”</h1>
+                    <div class="search__inner">
+                        <section class="search__filter hidden">
+                            <h2 class="search__header">Filter by</h2>
+                            <!--wrap 1  -->
+                            <div class="search__wrap">
+                                <div class="search__row">
+                                    <h3 class="search__title">Price</h3>
+                                    <img
+                                        src="./assets/icons/arrow-up.svg"
+                                        alt=""
+                                        class="search__icon"
+                                    />
+                                </div>
+                                <ul class="search__list">
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check"
+                                            id="check1"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check1"
+                                            class="search__item-label"
+                                            >Premium</label
+                                        >
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check"
+                                            id="check2"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check2"
+                                            class="search__item-label"
+                                            >Free</label
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--wrap 1  -->
+                            <div class="search__wrap">
+                                <div class="search__row">
+                                    <h3 class="search__title">Class Level</h3>
+                                    <img
+                                        src="./assets/icons/arrow-up.svg"
+                                        alt=""
+                                        class="search__icon"
+                                    />
+                                </div>
+                                <ul class="search__list">
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check2"
+                                            id="check3"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check3"
+                                            class="search__item-label"
+                                            >Beginner</label
+                                        >
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check2"
+                                            id="check4"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check4"
+                                            class="search__item-label"
+                                            >Intermediate</label
+                                        >
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check2"
+                                            id="check9"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check9"
+                                            class="search__item-label"
+                                            >Advance</label
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--wrap 1  -->
+                            <div class="search__wrap">
+                                <div class="search__row">
+                                    <h3 class="search__title">Language</h3>
+                                    <img
+                                        src="./assets/icons/arrow-up.svg"
+                                        alt=""
+                                        class="search__icon"
+                                    />
+                                </div>
+                                <ul class="search__list">
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check3"
+                                            id="check5"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check5"
+                                            class="search__item-label"
+                                            >English</label
+                                        >
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check3"
+                                            id="check6"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check6"
+                                            class="search__item-label"
+                                            >German</label
+                                        >
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check3"
+                                            id="check10"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check10"
+                                            class="search__item-label"
+                                            >French</label
+                                        >
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check3"
+                                            id="check11"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check11"
+                                            class="search__item-label"
+                                            >Hindi</label
+                                        >
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check3"
+                                            id="check12"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check12"
+                                            class="search__item-label"
+                                            >Bengali</label
+                                        >
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check3"
+                                            id="check13"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check13"
+                                            class="search__item-label"
+                                            >Arabic</label
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--wrap 1  -->
+                            <div class="search__wrap">
+                                <div class="search__row">
+                                    <h3 class="search__title">Rating</h3>
+                                    <img
+                                        src="./assets/icons/arrow-up.svg"
+                                        alt=""
+                                        class="search__icon"
+                                    />
+                                </div>
+                                <ul class="search__list">
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check4"
+                                            id="check7"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check7"
+                                            class="search__item-label"
+                                        >
+                                            <span class="search__item-rating"
+                                                >5.0</span
+                                            >
+                                            <img
+                                                src="./assets/icons/Star 21.svg"
+                                                alt=""
+                                                class="search__item-rating-star"
+                                            />
+                                            <span class="search__item-rating"
+                                                >(5325)</span
+                                            >
+                                        </label>
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check4"
+                                            id="check8"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check8"
+                                            class="search__item-label"
+                                        >
+                                            <span class="search__item-rating"
+                                                >4.5</span
+                                            >
+                                            <img
+                                                src="./assets/icons/Star 21.svg"
+                                                alt=""
+                                                class="search__item-rating-star"
+                                            />
+                                            <span class="search__item-rating"
+                                                >(4325)</span
+                                            >
+                                        </label>
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check4"
+                                            id="check14"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check14"
+                                            class="search__item-label"
+                                        >
+                                            <span class="search__item-rating"
+                                                >4.0</span
+                                            >
+                                            <img
+                                                src="./assets/icons/Star 21.svg"
+                                                alt=""
+                                                class="search__item-rating-star"
+                                            />
+                                            <span class="search__item-rating"
+                                                >(3325)</span
+                                            >
+                                        </label>
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check4"
+                                            id="check15"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check15"
+                                            class="search__item-label"
+                                        >
+                                            <span class="search__item-rating"
+                                                >3.5</span
+                                            >
+                                            <img
+                                                src="./assets/icons/Star 21.svg"
+                                                alt=""
+                                                class="search__item-rating-star"
+                                            />
+                                            <span class="search__item-rating"
+                                                >(2325)</span
+                                            >
+                                        </label>
+                                    </li>
+                                    <li class="search_item">
+                                        <input
+                                            type="radio"
+                                            name="check4"
+                                            id="check16"
+                                            class="search__item-check"
+                                        />
+                                        <label
+                                            for="check16"
+                                            class="search__item-label"
+                                        >
+                                            <span class="search__item-rating"
+                                                >3.0</span
+                                            >
+                                            <img
+                                                src="./assets/icons/Star 21.svg"
+                                                alt=""
+                                                class="search__item-rating-star"
+                                            />
+                                            <span class="search__item-rating"
+                                                >(1325)</span
+                                            >
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--wrap 5  -->
+                            <div class="search__wrap">
+                                <div class="search__row">
+                                    <h3 class="search__title">Features</h3>
+                                    <img
+                                        src="./assets/icons/arrow-up.svg"
+                                        alt=""
+                                        class="search__icon"
+                                    />
+                                </div>
+                            </div>
+                            <!--wrap 6  -->
+                            <div class="search__wrap">
+                                <div class="search__row">
+                                    <h3 class="search__title">Subtitles</h3>
+                                    <img
+                                        src="./assets/icons/arrow-up.svg"
+                                        alt=""
+                                        class="search__icon"
+                                    />
+                                </div>
+                            </div>
+                        </section>
+                        <script>
+                            const $ = document.querySelector.bind(document);
+                            const $$ = document.querySelectorAll.bind(document);
+
+                            const searchDropdown = $$(".search__row");
+                            const searchIcons = $$(".search__icon");
+                            const searchList = $$(".search__list");
+
+                            let isDrop = false;
+                            if (searchDropdown) {
+                                Array.from(searchDropdown).forEach(
+                                    (dropdown, index) => {
+                                        const searchIcon = searchIcons[index];
+                                        const searchItem = searchList[index];
+                                        dropdown.onclick = function () {
+                                            isDrop = !isDrop;
+
+                                            searchIcon.classList.toggle(
+                                                "active",
+                                                isDrop
+                                            );
+
+                                            searchItem.classList.toggle(
+                                                "active",
+                                                isDrop
+                                            );
+                                        };
+                                    }
+                                );
+                            }
+                        </script>
+
+                        <div class="search__list-courses">
+                            <!-- item1 -->
+                            <article class="search__item">
+                                <figure class="search__item-wrap">
+                                    <a href="./details.html">
+                                        <img
+                                            src="./assets/images/hero.jpg"
+                                            alt="Basic Web Design 2022"
+                                            class="search__item-thumb"
+                                        />
+                                        <div class="search__item-button"></div>
+                                    </a>
+                                </figure>
+                                <section class="search__item-content">
+                                    <p class="search__item-title">Web Design</p>
+                                    <div class="search__item-row">
+                                        <a href="./details.html">
+                                            <h3 class="search__item-heading">
+                                                Basic Web Design 2022
+                                            </h3>
+                                        </a>
+                                        <p class="search__item-price">$ 149</p>
+                                    </div>
+                                    <div class="search__item-row">
+                                        <span class="search__item-text"
+                                            >4.5</span
+                                        >
+                                        <img
+                                            src="./assets/icons/star22.svg"
+                                            alt=""
+                                            class="search__item-star"
+                                        />
+                                        <span class="search__item-text"
+                                            >(5325)</span
+                                        >
+                                    </div>
+                                </section>
+                            </article>
+                            <!-- item1 -->
+                            <article class="search__item">
+                                <figure class="search__item-wrap">
+                                    <a href="./details.html">
+                                        <img
+                                            src="./assets/images/hero.jpg"
+                                            alt="Basic Web Design 2022"
+                                            class="search__item-thumb"
+                                        />
+                                        <div class="search__item-button"></div>
+                                    </a>
+                                </figure>
+                                <section class="search__item-content">
+                                    <p class="search__item-title">Web Design</p>
+                                    <div class="search__item-row">
+                                        <a href="./details.html">
+                                            <h3 class="search__item-heading">
+                                                Basic Web Design 2022
+                                            </h3>
+                                        </a>
+                                        <p class="search__item-price">$ 149</p>
+                                    </div>
+                                    <div class="search__item-row">
+                                        <span class="search__item-text"
+                                            >4.5</span
+                                        >
+                                        <img
+                                            src="./assets/icons/star22.svg"
+                                            alt=""
+                                            class="search__item-star"
+                                        />
+                                        <span class="search__item-text"
+                                            >(5325)</span
+                                        >
+                                    </div>
+                                </section>
+                            </article>
+                            <!-- item1 -->
+                            <article class="search__item">
+                                <figure class="search__item-wrap">
+                                    <a href="./details.html">
+                                        <img
+                                            src="./assets/images/hero.jpg"
+                                            alt="Basic Web Design 2022"
+                                            class="search__item-thumb"
+                                        />
+                                        <div class="search__item-button"></div>
+                                    </a>
+                                </figure>
+                                <section class="search__item-content">
+                                    <p class="search__item-title">Web Design</p>
+                                    <div class="search__item-row">
+                                        <a href="./details.html">
+                                            <h3 class="search__item-heading">
+                                                Basic Web Design 2022
+                                            </h3>
+                                        </a>
+                                        <p class="search__item-price">$ 149</p>
+                                    </div>
+                                    <div class="search__item-row">
+                                        <span class="search__item-text"
+                                            >4.5</span
+                                        >
+                                        <img
+                                            src="./assets/icons/star22.svg"
+                                            alt=""
+                                            class="search__item-star"
+                                        />
+                                        <span class="search__item-text"
+                                            >(5325)</span
+                                        >
+                                    </div>
+                                </section>
+                            </article>
+                            <!-- item1 -->
+                            <article class="search__item">
+                                <figure class="search__item-wrap">
+                                    <a href="./details.html">
+                                        <img
+                                            src="./assets/images/hero.jpg"
+                                            alt="Basic Web Design 2022"
+                                            class="search__item-thumb"
+                                        />
+                                        <div class="search__item-button"></div>
+                                    </a>
+                                </figure>
+                                <section class="search__item-content">
+                                    <p class="search__item-title">Web Design</p>
+                                    <div class="search__item-row">
+                                        <a href="./details.html">
+                                            <h3 class="search__item-heading">
+                                                Basic Web Design 2022
+                                            </h3>
+                                        </a>
+                                        <p class="search__item-price">$ 149</p>
+                                    </div>
+                                    <div class="search__item-row">
+                                        <span class="search__item-text"
+                                            >4.5</span
+                                        >
+                                        <img
+                                            src="./assets/icons/star22.svg"
+                                            alt=""
+                                            class="search__item-star"
+                                        />
+                                        <span class="search__item-text"
+                                            >(5325)</span
+                                        >
+                                    </div>
+                                </section>
+                            </article>
+                            <!-- item1 -->
+                            <article class="search__item">
+                                <figure class="search__item-wrap">
+                                    <a href="./details.html">
+                                        <img
+                                            src="./assets/images/hero.jpg"
+                                            alt="Basic Web Design 2022"
+                                            class="search__item-thumb"
+                                        />
+                                        <div class="search__item-button"></div>
+                                    </a>
+                                </figure>
+                                <section class="search__item-content">
+                                    <p class="search__item-title">Web Design</p>
+                                    <div class="search__item-row">
+                                        <a href="./details.html">
+                                            <h3 class="search__item-heading">
+                                                Basic Web Design 2022
+                                            </h3>
+                                        </a>
+                                        <p class="search__item-price">$ 149</p>
+                                    </div>
+                                    <div class="search__item-row">
+                                        <span class="search__item-text"
+                                            >4.5</span
+                                        >
+                                        <img
+                                            src="./assets/icons/star22.svg"
+                                            alt=""
+                                            class="search__item-star"
+                                        />
+                                        <span class="search__item-text"
+                                            >(5325)</span
+                                        >
+                                    </div>
+                                </section>
+                            </article>
+                            <!-- item1 -->
+                            <article class="search__item">
+                                <figure class="search__item-wrap">
+                                    <a href="./details.html">
+                                        <img
+                                            src="./assets/images/hero.jpg"
+                                            alt="Basic Web Design 2022"
+                                            class="search__item-thumb"
+                                        />
+                                        <div class="search__item-button"></div>
+                                    </a>
+                                </figure>
+                                <section class="search__item-content">
+                                    <p class="search__item-title">Web Design</p>
+                                    <div class="search__item-row">
+                                        <a href="./details.html">
+                                            <h3 class="search__item-heading">
+                                                Basic Web Design 2022
+                                            </h3>
+                                        </a>
+                                        <p class="search__item-price">$ 149</p>
+                                    </div>
+                                    <div class="search__item-row">
+                                        <span class="search__item-text"
+                                            >4.5</span
+                                        >
+                                        <img
+                                            src="./assets/icons/star22.svg"
+                                            alt=""
+                                            class="search__item-star"
+                                        />
+                                        <span class="search__item-text"
+                                            >(5325)</span
+                                        >
+                                    </div>
+                                </section>
+                            </article>
+                            <!-- item1 -->
+                            <article class="search__item">
+                                <figure class="search__item-wrap">
+                                    <a href="./details.html">
+                                        <img
+                                            src="./assets/images/hero.jpg"
+                                            alt="Basic Web Design 2022"
+                                            class="search__item-thumb"
+                                        />
+                                        <div class="search__item-button"></div>
+                                    </a>
+                                </figure>
+                                <section class="search__item-content">
+                                    <p class="search__item-title">Web Design</p>
+                                    <div class="search__item-row">
+                                        <a href="./details.html">
+                                            <h3 class="search__item-heading">
+                                                Basic Web Design 2022
+                                            </h3>
+                                        </a>
+                                        <p class="search__item-price">$ 149</p>
+                                    </div>
+                                    <div class="search__item-row">
+                                        <span class="search__item-text"
+                                            >4.5</span
+                                        >
+                                        <img
+                                            src="./assets/icons/star22.svg"
+                                            alt=""
+                                            class="search__item-star"
+                                        />
+                                        <span class="search__item-text"
+                                            >(5325)</span
+                                        >
+                                    </div>
+                                </section>
+                            </article>
+                            <!-- item1 -->
+                            <article class="search__item">
+                                <figure class="search__item-wrap">
+                                    <a href="./details.html">
+                                        <img
+                                            src="./assets/images/hero.jpg"
+                                            alt="Basic Web Design 2022"
+                                            class="search__item-thumb"
+                                        />
+                                        <div class="search__item-button"></div>
+                                    </a>
+                                </figure>
+                                <section class="search__item-content">
+                                    <p class="search__item-title">Web Design</p>
+                                    <div class="search__item-row">
+                                        <a href="./details.html">
+                                            <h3 class="search__item-heading">
+                                                Basic Web Design 2022
+                                            </h3>
+                                        </a>
+                                        <p class="search__item-price">$ 149</p>
+                                    </div>
+                                    <div class="search__item-row">
+                                        <span class="search__item-text"
+                                            >4.5</span
+                                        >
+                                        <img
+                                            src="./assets/icons/star22.svg"
+                                            alt=""
+                                            class="search__item-star"
+                                        />
+                                        <span class="search__item-text"
+                                            >(5325)</span
+                                        >
+                                    </div>
+                                </section>
+                            </article>
+                            <!-- item1 -->
+                            <article class="search__item">
+                                <figure class="search__item-wrap">
+                                    <a href="./details.html">
+                                        <img
+                                            src="./assets/images/hero.jpg"
+                                            alt="Basic Web Design 2022"
+                                            class="search__item-thumb"
+                                        />
+                                        <div class="search__item-button"></div>
+                                    </a>
+                                </figure>
+                                <section class="search__item-content">
+                                    <p class="search__item-title">Web Design</p>
+                                    <div class="search__item-row">
+                                        <a href="./details.html">
+                                            <h3 class="search__item-heading">
+                                                Basic Web Design 2022
+                                            </h3>
+                                        </a>
+                                        <p class="search__item-price">$ 149</p>
+                                    </div>
+                                    <div class="search__item-row">
+                                        <span class="search__item-text"
+                                            >4.5</span
+                                        >
+                                        <img
+                                            src="./assets/icons/star22.svg"
+                                            alt=""
+                                            class="search__item-star"
+                                        />
+                                        <span class="search__item-text"
+                                            >(5325)</span
+                                        >
+                                    </div>
+                                </section>
+                            </article>
+                            <!-- item1 -->
+                            <article class="search__item">
+                                <figure class="search__item-wrap">
+                                    <a href="./details.html">
+                                        <img
+                                            src="./assets/images/hero.jpg"
+                                            alt="Basic Web Design 2022"
+                                            class="search__item-thumb"
+                                        />
+                                        <div class="search__item-button"></div>
+                                    </a>
+                                </figure>
+                                <section class="search__item-content">
+                                    <p class="search__item-title">Web Design</p>
+                                    <div class="search__item-row">
+                                        <a href="./details.html">
+                                            <h3 class="search__item-heading">
+                                                Basic Web Design 2022
+                                            </h3>
+                                        </a>
+                                        <p class="search__item-price">$ 149</p>
+                                    </div>
+                                    <div class="search__item-row">
+                                        <span class="search__item-text"
+                                            >4.5</span
+                                        >
+                                        <img
+                                            src="./assets/icons/star22.svg"
+                                            alt=""
+                                            class="search__item-star"
+                                        />
+                                        <span class="search__item-text"
+                                            >(5325)</span
+                                        >
+                                    </div>
+                                </section>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <section class="footer__column">
+                        <h3 class="footer__heading">Courses</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Classroom Courses</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Virtual Classroom Courses</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >E-Learning Courses</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footer__column">
+                        <h3 class="footer__heading">Circuit</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">About us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Why Circuit</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Testimonials</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Promotions</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Podcasts</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Forum</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footer__column">
+                        <h3 class="footer__heading">Help</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Contact us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Our Venues</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">My account</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footer__column">
+                        <h3 class="footer__heading">Newsletter</h3>
+                        <form action="" class="footer__form">
+                            <input
+                                type="email"
+                                name=""
+                                class="footer__input"
+                                placeholder="email address"
+                                id=""
+                            />
+                            <button type="submit" class="btn footer__submit">
+                                Subscribe
+                            </button>
+                        </form>
+                        <div class="footer__contact">
+                            <div class="contact__email">
+                                <p class="contact__title">Email us</p>
+                                <p class="contact__desc">email@gmail.com</p>
+                            </div>
+                            <div class="contact__phone">
+                                <p class="contact__title">Call us</p>
+                                <p class="contact__desc">000 1234 5678</p>
+                            </div>
+                        </div>
+                        <div class="footer__socials">
+                            <a href="#!">
+                                <img
+                                    src="./assets/icons/facebook.svg"
+                                    alt="facebook"
+                                    class="footer__social"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/icons/linkin.svg"
+                                    alt="link-in"
+                                    class="footer__social"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/icons/twittef.svg"
+                                    alt="twitter"
+                                    class="footer__social"
+                                />
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <!-- bottom -->
+                <div class="footer__bottom">
+                    <img
+                        src="./assets/icons/Logo.svg"
+                        alt="circuit"
+                        class="footer__logo"
+                    />
+                    <div class="footer_payment">
+                        <a href="#!">
+                            <img
+                                src="./assets/icons/pay.svg"
+                                alt="pay"
+                                class="footer__icon-pay"
+                            />
+                        </a>
+                        <a href="#!">
+                            <img
+                                src="./assets/icons/visa.svg"
+                                alt="visa"
+                                class="footer__icon-pay"
+                            />
+                        </a>
+                        <a href="#!">
+                            <img
+                                src="./assets/icons/payment.svg"
+                                alt="payment"
+                                class="footer__icon-pay"
+                            />
+                        </a>
+                    </div>
+                    <div>
+                        <p class="footer_copy-right">
+                            Copyright © 2022 UIHUT all rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

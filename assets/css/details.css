@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: #fff;
+    /* nen cho linear */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* details */
+.detail {
+    padding-top: 70px;
+    height: 100vh;
+    background: #e0eae5;
+}
+
+.detail__inner {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.detail__info {
+    flex-shrink: 0;
+    width: 48%;
+}
+
+.detail__heading {
+    color: #032e32;
+    font-size: 4.2rem;
+    font-weight: 800;
+    line-height: 1.23;
+}
+
+.detail__desc {
+    margin: 20px 0;
+}
+
+.detail__title,
+.detail__price {
+    color: #032e32;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.detail__evalue {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 12px;
+}
+
+.detail__item,
+.detail__label {
+    color: #032e32;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.detail__title {
+    margin: 28px 0;
+}
+
+.detail__list {
+}
+
+.detail__item {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.detail__item::before {
+    content: url(../icons/check\ 1.svg);
+}
+
+.detail__button {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.detail__btn {
+    --height: 60px;
+
+    min-width: 147px;
+    border: none;
+    outline: none;
+}
+
+.detail__btn:last-child {
+    min-width: 170px;
+    color: #fff;
+    background: #032e32;
+}
+
+.detail__wrap {
+    position: relative;
+}
+
+.detail__close {
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.detail__images {
+    margin-top: 135px;
+    height: 470px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail__img {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 470px;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.detail__deco {
+}
