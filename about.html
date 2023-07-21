@@ -95,7 +95,7 @@
         <!-- link -->
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/about.css" />
-        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <link rel="stylesheet" href="./assets/responsive/about.css" />
     </head>
     <body>
         <header class="header">
@@ -132,23 +132,33 @@
                             <a href="#!" class="header__link">About us</a>
                         </li>
                         <li class="header__item">
-                            <a href="./resources.html" class="header__link">Resources</a>
+                            <a href="./resources.html" class="header__link"
+                                >Resources</a
+                            >
                         </li>
                         <li class="header__item">
-                            <a href="./contact.html" class="header__link">Contact</a>
+                            <a href="./contact.html" class="header__link"
+                                >Contact</a
+                            >
                         </li>
                         <!-- show on tablet and mobile -->
                         <li class="header__item hidden-pc separate">
-                            <a href="./login.html" class="header__link">Log In</a>
+                            <a href="./login.html" class="header__link"
+                                >Log In</a
+                            >
                         </li>
                         <li class="header__item hidden-pc">
-                            <a href="./signup.html" class="header__link">Sign Up</a>
+                            <a href="./signup.html" class="header__link"
+                                >Sign Up</a
+                            >
                         </li>
                         <!-- log-in -->
                     </ul>
-                    <div class="header__cta hidden-mobile">
+                    <div class="header__cta hidden">
                         <a href="./login.html" class="header__log-in">Log In</a>
-                        <a href="./signup.html" class="btn header__sign-up">Sign Up</a>
+                        <a href="./signup.html" class="btn header__sign-up"
+                            >Sign Up</a
+                        >
                     </div>
                 </div>
 
@@ -180,13 +190,38 @@
                             <img
                                 src="./assets/icons/deco-hero1.svg"
                                 alt=""
-                                class="hero__deco"
+                                class="hero__deco hidden-mobile"
                             />
                         </figure>
                     </div>
                 </section>
             </div>
         </header>
+        <section class="mobile-menu hidden-pc">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-overlay"
+                class="menu__overlay-input"
+            />
+            <label for="menu-overlay" class="menu__overlay"></label>
+            <div class="menu__wrap">
+                <a href="/">
+                    <img
+                        src="./assets/icons/Logo.svg"
+                        alt="circuit"
+                        class="menu__logo"
+                    />
+                </a>
+                <ul class="menu__list"></ul>
+                <script>
+                    const menuList = document.querySelector(".menu__list");
+                    const headerList = document.querySelector(".header__list");
+
+                    menuList.innerHTML = headerList.innerHTML;
+                </script>
+            </div>
+        </section>
         <main>
             <section class="skills">
                 <div class="container">
@@ -294,7 +329,7 @@
                                 class="talent__img"
                             />
                         </figure>
-                        <figure class="talent__thums">
+                        <figure class="talent__thums hidden-mobile">
                             <img
                                 src="./assets/images/support1.jpg"
                                 alt=""
@@ -339,7 +374,7 @@
                             <img
                                 src="./assets/images/hero-courses1.jpg"
                                 alt="avatar"
-                                class="students__avatar"
+                                class="students__avatar hidden"
                             />
                             <img
                                 src="./assets/images/hero-courses1.jpg"
@@ -364,7 +399,7 @@
                             <img
                                 src="./assets/images/hero-courses1.jpg"
                                 alt="avatar"
-                                class="students__avatar"
+                                class="students__avatar hidden"
                             />
                         </figure>
                         <section class="students__info">

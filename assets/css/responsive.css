@@ -61,6 +61,7 @@
     /* header */
     .header__top {
         position: relative;
+        padding: 40px 0;
     }
 
     .header__logo {
@@ -68,6 +69,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        width: 120px;
     }
 
     .hero {
