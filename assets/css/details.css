@@ -37,7 +37,7 @@ textarea {
 
 /* details */
 .detail {
-    padding-top: 70px;
+    padding: 70px 0;
     height: 100vh;
     background: #e0eae5;
 }

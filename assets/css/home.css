@@ -462,6 +462,7 @@ textarea {
     background: #ffffff;
     border: 1px solid #d8e0e0;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .feature__item:hover {
@@ -691,6 +692,7 @@ textarea {
     background: #fff;
     opacity: 0.6;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .feedback__item:hover {
